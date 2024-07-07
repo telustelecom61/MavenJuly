@@ -1,5 +1,6 @@
 package testCases;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -26,8 +27,8 @@ public class FirstTest {
 		System.out.println("Clicked on Login");
 		WebElement menu = driver.findElement(By.xpath("//button[@id='react-burger-menu-btn']"));
 		String menuText = menu.getText();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		System.out.println(menuText);
 		driver.quit();
-	}
+	}	
 }
