@@ -8,17 +8,18 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
 
+import base.baseTest;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class FirstTest {
+public class FirstTest extends baseTest{
 
 	@Test
 	public void testGoogle() throws Exception {
-		WebDriverManager.chromedriver().setup();
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--headless");
-		
-		WebDriver driver = new ChromeDriver(options);
+//		WebDriverManager.chromedriver().setup();
+//		ChromeOptions options = new ChromeOptions();
+//		options.addArguments("--headless");
+//		
+//		WebDriver driver = new ChromeDriver(options);
 		driver.get("https://www.saucedemo.com/");
 		Thread.sleep(1000);
 		driver.findElement(By.id("user-name")).sendKeys("standard_user");
