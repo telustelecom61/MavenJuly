@@ -22,9 +22,9 @@ public class baseTest {
 		}
 		else if(System.getProperty("browser").equalsIgnoreCase("edge")) {
 			WebDriverManager.edgedriver().setup();
-			EdgeOptions options = new EdgeOptions();
+			//EdgeOptions options = new EdgeOptions();
 			//options.addArguments("--headless");
-			driver = new EdgeDriver(options);
+			driver = new EdgeDriver();
 		}
 		driver.manage().window().maximize();
 		driver.get(System.getProperty("url"));
