@@ -23,7 +23,7 @@ public class baseTest {
 		else if(System.getProperty("browser").equalsIgnoreCase("edge")) {
 			WebDriverManager.edgedriver().setup();
 			EdgeOptions options = new EdgeOptions();
-			options.addArguments("--headless");
+			//options.addArguments("--headless");
 			driver = new EdgeDriver(options);
 		}
 		driver.manage().window().maximize();
